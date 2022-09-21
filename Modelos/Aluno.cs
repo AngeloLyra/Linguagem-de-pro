@@ -1,6 +1,6 @@
 namespace Modelos{
 
-  class Aluno {
+  class Aluno : Pessoa {
     //private string nome;
     //public string matricula;
     private int periodo;
@@ -16,10 +16,6 @@ namespace Modelos{
       }
     }
 
-    public string Nome {
-      get; set;
-    }
-
     public string Matricula {
       get; set;
     }
@@ -31,7 +27,7 @@ namespace Modelos{
       this.Periodo = periodo;
     }
 
-    public Aluno(string matricula, string nome) : this()  {
+    public Aluno(string matricula, string nome) : this(1)  {
       this.Matricula = matricula;
       this.Nome = nome;
     }
@@ -43,6 +39,11 @@ namespace Modelos{
     
     public bool Matricular(Disciplina disciplina) {
       return this.Periodo == disciplina.Semestre;
+    }
+
+    public override bool Validar() {
+      return this.Matricula != null &&
+        this.Matricula.Length > 0;
     }
       
   }

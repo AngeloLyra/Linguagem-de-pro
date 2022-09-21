@@ -21,7 +21,7 @@ class AulaObjeto {
     };
     
     Disciplina disciplina = new Disciplina{
-      nome = "Linguagem de Programação",
+      Nome = "Linguagem de Programação",
   
     };
 
