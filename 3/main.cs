@@ -9,14 +9,14 @@ class Aula3 {
       Nome = "Maria",
       Periodo = 0
     };
-    Impressora.print(aluno1);
+    Impressora.Imprimir(aluno1);
     Aluno aluno2 = new Aluno();
-    Impressora.print(aluno2);
+    Impressora.Imprimir(aluno2);
     Aluno aluno3 = new Aluno(2);
-    Impressora.print(aluno3);
+    Impressora.Imprimir(aluno3);
     Aluno aluno4 = new Aluno("2020ENEL456", "José");
-    Impressora.print(aluno4);
+    Impressora.Imprimir(aluno4);
     Aluno aluno5 = new Aluno("2020ENEL789", "João", 3);
-    Impressora.print(aluno5);
+    Impressora.Imprimir(aluno5);
   } 
 }

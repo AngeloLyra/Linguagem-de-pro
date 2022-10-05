@@ -8,24 +8,24 @@ namespace Modelos {
       get; set;
     }
 
-    public int Semestre{
+    public int Semestre {
       get => this.semestre;
       set {
-         if(value < 1){
-        this.semestre = 1;
-      } else if(value > 10){
-        this.semestre = 10;
-      } else{
-        this.Semestre = value;
-       }
+        if(value < 1) {
+          this.semestre = 1;
+        } else if(value > 10) {
+          this.semestre = 10;
+        } else {
+          this.semestre = value;
+        }
       }
-    }  
-
-    public Disciplina() : this (1) {
     }
 
-    public Disciplina(int semestre) { 
-      this.Semestre =  semestre;
+    public Disciplina() : this(1) {
+    }
+
+    public Disciplina(int semestre) {
+      this.Semestre = semestre;
     }
 
     public Disciplina(string nome) : this(1) {
@@ -35,5 +35,7 @@ namespace Modelos {
     public Disciplina(string nome, int semestre) : this(semestre) {
       this.Nome = nome;
     }
+    
   }
+
 }
